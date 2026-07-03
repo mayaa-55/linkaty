@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate Your Brand | Professional Services</title>
+    <style>
+        :root {
+            --primary-color: #6c5ce7;
+            --bg-color: #f8f9fe;
+            --text-color: #2d3436;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
+            background: var(--bg-color); 
+            color: var(--text-color); 
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh;
+        }
+
+        /* Responsive Wrapper to keep content centered on Laptop */
+        .page-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Header */
+        header { 
+            background: white; 
+            padding: 15px 20px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand-name { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); }
+        .contact-info { font-size: 0.8rem; text-align: right; }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, var(--primary-color), #a29bfe); color: white; padding: 40px 20px; text-align: center; }
+
+        /* Form */
+        .container { 
+            background: white; 
+            padding: 30px; 
+            margin: -30px 20px 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+        }
+
+        .form-group { margin-bottom: 20px; }
+        input, select, textarea { width: 100%; padding: 12px; border: 2px solid #eee; border-radius: 12px; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; background: var(--primary-color); color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; }
+
+        footer { text-align: center; padding: 20px; font-size: 0.8rem; margin-top: auto; }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; }
+            .contact-info { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="page-wrapper" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="brand-name">linkaty</div>
+            <div class="contact-info">
+                <div>refactstudio@gmail.com</div>
+                <div>+201557337236</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Let's Start Your Project</h1>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="container">
+            <form action="https://formspree.io/f/xpqgokdq" method="POST">
+
+    <div class="form-group">
+
+        <label>Which service do you need?</label>
+
+        <select name="service" required>
+
+            <option value="" disabled selected>Choose a service...</option>
+
+            <option value="engagment">Engagement invitation link</option>
+
+            <option value="wedding">Wedding invitation link</option>
+
+            <option value="birthday">Birthday gift link</option>
+
+            <option value="birthdayinv">Birthday invitation link</option>
+
+            <option value="couples">Anniversary link</option>
+
+            <option value="graduation">Graduation congrats link</option>
+
+            <option value="web">Website Development</option>
+
+            <option value="logo">Logo design</option>
+
+        </select>
+
+    </div>
+
+
+
+    <div class="form-group">
+
+        <label>What is your ideal deadline?</label>
+
+        <input type="date" name="deadline" required>
+
+    </div>
+
+
+
+    <div class="form-group">
+
+        <label>Project Details</label>
+
+        <textarea name="details" rows="6" style="resize: none;" placeholder="Tell us about your vision, link details, or requirements..." required></textarea>
+
+    </div>
+
+
+
+    <div class="form-group">
+
+        <label>Full Name</label>
+
+        <input type="name" name="name" placeholder="Full Name" required>
+
+    </div>
+
+
+
+     <div class="form-group">
+
+        <label>Your WhatsApp number</label>
+
+        <input type="tel" name="phone_number" placeholder="+20 123 456 789" required>
+
+    </div>
+
+
+
+    <button type="submit">Submit Request</button>
+
+</form>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 linkaty</footer>
+
+</body>
+</html>
