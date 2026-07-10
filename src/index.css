@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap");
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-accent-primary: #6d5ef8;
+  --color-accent-secondary: #ec4899;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: var(--color-gray-900);
+}
+
+.font-heading {
+  font-family: "Sora", sans-serif;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
